@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tic_Tac_Toe_GameWindowsService", "Tic_Tac_Toe_GameWindowsService\Tic_Tac_Toe_GameWindowsService.csproj", "{8A051338-FC0B-4985-8AB7-8EA6AF8A478A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeGameService", "TicTacToeGameService\TicTacToeGameService.csproj", "{768ED4D7-72FD-41F1-8180-847317258DD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "Host\Host.csproj", "{DD58DCBC-DFC4-4990-B7C1-5B6FAD0CF783}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A051338-FC0B-4985-8AB7-8EA6AF8A478A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A051338-FC0B-4985-8AB7-8EA6AF8A478A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A051338-FC0B-4985-8AB7-8EA6AF8A478A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A051338-FC0B-4985-8AB7-8EA6AF8A478A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{768ED4D7-72FD-41F1-8180-847317258DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768ED4D7-72FD-41F1-8180-847317258DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768ED4D7-72FD-41F1-8180-847317258DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768ED4D7-72FD-41F1-8180-847317258DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD58DCBC-DFC4-4990-B7C1-5B6FAD0CF783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD58DCBC-DFC4-4990-B7C1-5B6FAD0CF783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD58DCBC-DFC4-4990-B7C1-5B6FAD0CF783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD58DCBC-DFC4-4990-B7C1-5B6FAD0CF783}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33BB1B2F-DFDE-45B6-87AF-196F85F5BC1E}
+	EndGlobalSection
+EndGlobal

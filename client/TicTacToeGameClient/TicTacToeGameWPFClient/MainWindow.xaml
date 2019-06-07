@@ -1,0 +1,44 @@
+﻿<Window x:Class="TicTacToeGameWPFClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToeGameWPFClient"
+        mc:Ignorable="d"
+        Title="Tic-Tac-Toe Game" Name="windowGame" Height="340" Width="452" Closing="WindowGame_Closing">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Margin="10,10,10,0" Orientation="Horizontal" >
+            <Label Name="labelPlayerName" Content="Your name:" FontSize="15"/>
+            <TextBox Name="textBoxPlayerName" Width="152" Margin="0,0,11,0" FontSize="15" VerticalContentAlignment="Center" TextChanged="TextBoxPlayerName_TextChanged"/>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Top" Margin="10,10,10,0" Orientation="Horizontal" >
+            <Label Name="labelChooseYourField" Content="Choose your field:" FontSize="15"/>
+            <ComboBox Name="comboBoxField" Margin="37,0,10,0" Width="70" FontSize="15" SelectionChanged="ComboBoxField_SelectionChanged"/>
+            <Button Name="buttonStart" Content="Start" Width="118" FontSize="15" IsEnabled="False" Click="ButtonStart_Click"/>
+        </StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Name="Column1" />
+                <ColumnDefinition Name="Column2" Width="250"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Name="Row1" />
+                <RowDefinition Name="Row2" Height="30"/>
+            </Grid.RowDefinitions>
+            <WrapPanel Name="wrapPanel" Margin="0,5,0,0" >
+                <WrapPanel.Background >
+                    <ImageBrush ImageSource="/Images/tic-tac-toe.png" Stretch="Uniform"/>
+                </WrapPanel.Background>
+            </WrapPanel>
+            <DockPanel LastChildFill="True" Name="dockPanelUsers" Grid.Column="1" Background="PowderBlue" Margin="0,5,0,0">
+                <Label Name="labelUsers" Content="Users" HorizontalAlignment="Center" FontSize="15" DockPanel.Dock="Top"/>
+                <RichTextBox Name="richTextBoxUsers" Height="auto" FontSize="15" FontFamily="Arial" Margin="5,0,5,5"/>
+            </DockPanel>
+            <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal" Background="LightBlue">
+                <Label Name="labelStatus" Content="Status:" FontSize="15"/>
+                <Label Name="labelStatusName" FontSize="15"/>
+                <Label Name="labelStatusNewGame" FontSize="15" Margin="20,0,0,0"/>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Window>
